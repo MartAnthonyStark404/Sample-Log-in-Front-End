@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,600;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(https://i2.wp.com/www.csscodelab.com/wp-content/uploads/2019/11/stripe-hero-background-effect-html-css.png?fit=1062%2C631&ssl=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Mono', monospace;
+}
+#logo {
+    position: absolute;
+}
+.main {
+    display: relative;
+    height: 100vh;
+}
+/*****FORM CONTAINER**********/
+.main form {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.6);
+    left: 50%;
+    transform: translateX(-250px);
+    top: 75px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 25px 25px;
+    padding: 25px;
+    justify-items: center;
+    justify-content: center;
+
+
+}
+/*   ANIMATION */
+@keyframes box {
+    0% {
+        background: darkslateblue;
+        width: 100px;
+        height: 50px;
+    }
+    25% {
+        background: deeppink;
+        width: 150px;
+        height: 50px;
+    }
+    50% {
+        background: darkkhaki;
+        width: 250px;
+        height: 50px;
+    }
+    75% {
+        background: darkturquoise;
+        width: 350px;
+        height: 50px;
+    }
+    100% {
+        background: darkturquoise;
+        width: 450px;
+        height: 50px;
+    }
+}
+.animBox {
+    animation: box 3s ease-in infinite alternate;
+}
+/* user icon */
+#userIcon {
+    position: absolute;
+    transform: translateX(-50%);
+    top: -50px;
+    left: 250px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+/* form font color */
+.main p {
+    color: aqua;
+}
+/*********FORM INPUT*************/
+.main input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid red;
+    color: #ffffff;
+    text-align: center;
+}
+/*******SIGN IN BUTTON********/
+.main #sign {
+    background: none;
+    border: 2px solid red;
+    color: #ffffff;
+    border-radius: 25px;
+}
+.main #sign:hover {
+    background: crimson;
+    transform: scale(1.1);
+}
